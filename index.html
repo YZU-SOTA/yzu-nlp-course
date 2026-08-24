@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="扬州大学自然语言处理课程主页，提供课程安排、讲义、作业、实验与课程设计资料。">
+  <meta name="theme-color" content="#14213d">
+  <title>自然语言处理 · 扬州大学</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span><strong>自然语言处理</strong><small>扬州大学 · 2024 秋</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="打开导航" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" aria-label="主导航">
+        <a href="#overview">课程信息</a>
+        <a href="#schedule">课程计划</a>
+        <a href="#coursework">课程设计</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i></i> YANGZHOU UNIVERSITY · FALL 2024</span>
+          <h1 id="hero-title">让机器理解<br><em>人类的语言</em></h1>
+          <p>从概率语言模型到大语言模型，系统学习自然语言处理的核心思想、经典方法与前沿技术。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#schedule">查看课程计划 <span>→</span></a>
+            <a class="button secondary" href="./lectures/lec1-v2.pdf">下载第一讲</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="network-card">
+            <div class="code-line"><span>Input</span><b>自然语言处理</b></div>
+            <div class="network">
+              <span class="node n1">词</span><span class="node n2">语义</span><span class="node n3">向量</span>
+              <span class="node n4">注意力</span><span class="node n5">理解</span>
+              <svg viewBox="0 0 400 220" preserveAspectRatio="none">
+                <path d="M70 50 C150 20 220 150 330 80"/><path d="M70 50 C150 180 260 20 330 80"/>
+                <path d="M105 170 C180 80 250 170 330 80"/><path d="M105 170 C180 210 240 40 285 175"/>
+              </svg>
+            </div>
+            <div class="code-line output"><span>Output</span><b>Language Intelligence</b></div>
+          </div>
+          <div class="floating-tag tag-one">Transformer</div>
+          <div class="floating-tag tag-two">BERT</div>
+          <div class="floating-tag tag-three">LLM</div>
+        </div>
+      </div>
+      <div class="container quick-facts reveal">
+        <div><span class="fact-icon">⌁</span><p><small>课程周期</small><strong>1—16 周</strong></p></div>
+        <div><span class="fact-icon">◷</span><p><small>上课时间</small><strong>周四 08:00—09:40</strong></p></div>
+        <div><span class="fact-icon">⌖</span><p><small>上课地点</small><strong>扬子津西校区 07011524</strong></p></div>
+        <div><span class="fact-icon">◎</span><p><small>任课教师</small><strong><a href="https://qiang2100.github.io/">强继朋</a></strong></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-no">01</span>
+          <div><p class="kicker">COURSE OVERVIEW</p><h2>课程信息</h2><p>理论、实践与研究并重，建立完整的 NLP 知识图谱。</p></div>
+        </div>
+        <div class="grade-grid reveal">
+          <article class="grade-card">
+            <div class="grade-top"><span>作业</span><strong>30<small>%</small></strong></div>
+            <p>四次书面与编程作业，围绕语言模型、文本分类、神经网络与预训练模型展开。</p>
+            <ul class="link-list">
+              <li><span>01</span><p>语言模型、朴素贝叶斯<small>Exercises 3.2–3.4, 3.6, 4.1–4.2</small></p></li>
+              <li><span>02</span><a href="./homeworks/homework2.docx">文本分类、语义向量、神经网络 ↗</a></li>
+              <li><span>03</span><a href="./homeworks/homework3.docx">RNN、LSTM、Transformer ↗</a></li>
+              <li><span>04</span><a href="./homeworks/homework4.pdf">预训练语言模型、大语言模型 ↗</a></li>
+            </ul>
+            <p class="notice">请独立完成，并在扬大作业本上书写。</p>
+          </article>
+          <article class="grade-card accent">
+            <div class="grade-top"><span>实验</span><strong>20<small>%</small></strong></div>
+            <p>四次上机实践，将算法原理转化为可运行的 NLP 系统。</p>
+            <ul class="link-list">
+              <li><span>01</span><a href="./exper/Experiment1.zip">构建 N 元语言模型 ↗</a></li>
+              <li><span>02</span><a href="./exper/Experiment2-student.zip">机器学习情感分类 ↗</a></li>
+              <li><span>03</span><a href="./exper/NLP实验3.doc">基于 BERT 的情感分类 ↗</a></li>
+              <li><span>04</span><a href="./exper/NLP实验4.pdf">基于大语言模型的情感分类 ↗</a></li>
+            </ul>
+            <a class="text-link" href="./exper/report_template.docx">下载实验报告模板 →</a>
+          </article>
+          <article class="grade-card exam">
+            <div class="grade-top"><span>期末考试</span><strong>50<small>%</small></strong></div>
+            <p>考试周进行闭卷考试，满分 100 分。</p>
+            <div class="donut" aria-label="期末考试占总成绩50%"><span>50%</span></div>
+          </article>
+        </div>
+        <div class="info-grid reveal">
+          <article><span class="mini-icon">∑</span><div><h3>预备知识</h3><p>概率论、线性代数；熟练使用 Python、NumPy 与 PyTorch。</p></div></article>
+          <article><span class="mini-icon">Aa</span><div><h3>推荐教材</h3><p>Dan Jurafsky &amp; James H. Martin, <a href="https://web.stanford.edu/~jurafsky/slp3/">Speech and Language Processing (3rd ed. draft) ↗</a></p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule-section" id="schedule">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-no">02</span>
+          <div><p class="kicker">WEEKLY SCHEDULE</p><h2>课程计划</h2><p>课程安排可能调整；所有作业应在周四上午 8 点前提交。</p></div>
+        </div>
+        <div class="schedule-list">
+          <article class="week reveal"><div class="week-meta"><small>WEEK</small><strong>01</strong><span>08.29</span></div><div class="week-main"><span class="topic-tag">基础</span><h3><a href="./lectures/lec1-v2.pdf">NLP 介绍 ↗</a></h3><p>课程概览与自然语言处理的发展脉络</p></div><a class="reading" href="https://princeton-nlp.github.io/cos484/readings/advances_in_nlp.pdf">Advances in NLP ↗</a></article>
+          <article class="week reveal"><div class="week-meta"><small>WEEK</small><strong>02</strong><span>09.05</span></div><div class="week-main"><span class="topic-tag">基础</span><h3><a href="./lectures/lec2-v2.pdf">语言模型 ↗</a></h3><p>N 元模型、概率估计与平滑</p></div><a class="reading" href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">J&amp;M 3.1–3.4 ↗</a></article>
+          <article class="week reveal"><div class="week-meta"><small>WEEK</small><strong>03—04</strong><span>09.12—09.19</span></div><div class="week-main"><span class="topic-tag gold">分类</span><h3><a href="./lectures/lec3.pdf">文本分类</a> · <a href="./lectures/Logistic_Regression.pdf">朴素贝叶斯与逻辑回归 ↗</a></h3><p>从概率分类器到判别模型</p></div><div class="assignment">作业 1</div></article>
+          <article class="week reveal"><div class="week-meta"><small>WEEK</small><strong>05—07</strong><span>09.26—10.10</span></div><div class="week-main"><span class="topic-tag cyan">表示</span><h3><a href="./lectures/lec4.pdf">向量语义 ↗</a></h3><p>词表示、相似度、TF-IDF 与 Word2Vec</p></div><div class="assignment">作业 2</div></article>
+          <article class="week reveal"><div class="week-meta"><small>WEEK</small><strong>08—09</strong><span>10.17—10.24</span></div><div class="week-main"><span class="topic-tag violet">深度学习</span><h3><a href="./lectures/lec5.pdf">神经语言模型 ↗</a></h3><p>神经元、前馈网络与训练方法</p></div><a class="reading" href="https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf">Bengio et al. ↗</a></article>
+          <article class="week reveal"><div class="week-meta"><small>WEEK</small><strong>10—11</strong><span>10.31—11.07</span></div><div class="week-main"><span class="topic-tag violet">序列建模</span><h3><a href="./lectures/lec6.pdf">RNN、LSTM 与注意力 ↗</a></h3><p>编码器—解码器模型与序列处理</p></div><div class="assignment">作业 3</div></article>
+          <article class="week reveal"><div class="week-meta"><small>WEEK</small><strong>12—14</strong><span>11.14—11.28</span></div><div class="week-main"><span class="topic-tag pink">Transformer</span><h3><a href="./lectures/lec7.pdf">Transformer 与预训练模型 ↗</a></h3><p>自注意力、ELMo、GPT、BERT 与机器翻译</p></div><div class="assignment">作业 4</div></article>
+          <article class="week reveal"><div class="week-meta"><small>WEEK</small><strong>15—16</strong><span>12.05—12.12</span></div><div class="week-main"><span class="topic-tag pink">前沿</span><h3>大语言模型</h3><p>提示与上下文学习、指令微调、RLHF 及模型局限</p></div><a class="reading" href="https://web.stanford.edu/~jurafsky/slp3/10.pdf">J&amp;M 10.1–10.6 ↗</a></article>
+        </div>
+        <details class="reading-drawer reveal">
+          <summary>展开核心阅读清单 <span>＋</span></summary>
+          <div class="reading-grid">
+            <a href="https://arxiv.org/pdf/1706.03762.pdf"><b>Attention Is All You Need</b><small>Vaswani et al. · 2017</small></a>
+            <a href="https://arxiv.org/pdf/1810.04805.pdf"><b>BERT</b><small>Devlin et al. · 2018</small></a>
+            <a href="https://arxiv.org/pdf/1301.3781.pdf"><b>Efficient Estimation of Word Representations</b><small>Mikolov et al. · 2013</small></a>
+            <a href="https://arxiv.org/pdf/1409.0473.pdf"><b>Neural Machine Translation</b><small>Bahdanau et al. · 2014</small></a>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section project-section" id="coursework">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <span class="section-no">03</span>
+          <div><p class="kicker">FINAL PROJECT</p><h2>课程设计</h2><p>以论文复现或自主研究项目，把课堂知识转化为真实的研究经验。</p></div>
+        </div>
+        <div class="project-grid reveal">
+          <article class="project-choice recommended"><span class="choice-no">A</span><span class="badge">推荐</span><h3>复现前沿论文</h3><p>选择一篇 ACL、NAACL 或 EMNLP 2022—2024 年的论文进行复现。</p></article>
+          <article class="project-choice"><span class="choice-no">B</span><h3>完成研究项目</h3><p>提出自己的 NLP 研究问题，并在获得导师事先批准后开展项目。</p></article>
+        </div>
+        <div class="project-bottom reveal">
+          <div><p class="kicker">TEAM &amp; DELIVERY</p><h3>组队与提交</h3><ul><li>每组建议 2 人，也可独立完成</li><li>5 分钟以内的 PPT 汇报</li><li>每位同学独立撰写课程设计报告</li></ul></div>
+          <a class="download-card" href="./exper/NLP课程设计-模版.docx"><span>DOCX</span><div><small>课程设计资料</small><strong>下载报告模板</strong></div><b>↓</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-heading reveal"><span class="section-no">04</span><div><p class="kicker">FAQ</p><h2>常见问题</h2></div></div>
+        <details class="faq-item reveal"><summary>作业是交作业纸还是作业本？<span>＋</span></summary><p>作业提交纸质版，需统一在扬大作业本上完成。</p></details>
+        <details class="faq-item reveal"><summary>课程设计如何组队？<span>＋</span></summary><p>建议每组 2 人，也可以独立完成。请尽早确定选题和队友。</p></details>
+        <details class="faq-item reveal"><summary>在哪里获取课程讲义和实验资料？<span>＋</span></summary><p>点击课程计划中的讲次标题即可下载讲义；作业和实验资料位于课程信息板块。</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark">N</span><span><strong>自然语言处理</strong><small>扬州大学</small></span></a><p>探索语言与智能的边界。</p></div>
+      <div><small>课程导航</small><a href="#overview">课程信息</a><a href="#schedule">课程计划</a><a href="#coursework">课程设计</a></div>
+      <div><small>相关链接</small><a href="https://qiang2100.github.io/">教师主页 ↗</a><a href="https://princeton-nlp.github.io/cos484/">参考课程 ↗</a><a href="https://web.stanford.edu/~jurafsky/slp3/">推荐教材 ↗</a></div>
+    </div>
+    <div class="container copyright"><span>© <span id="year">2024</span> Yangzhou University · NLP</span><a href="#top">返回顶部 ↑</a></div>
+  </footer>
+</body>
+</html>
